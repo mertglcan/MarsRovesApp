@@ -11,13 +11,11 @@ namespace MarsRovers
 
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(ErrorHandler);
 
-
-
             Console.WriteLine("Enter the right upper coordinates of planet with space (ex: 5 5)");
-            string planetCoordinates = Console.ReadLine();
+            string tmpPlanetCoordinates = Console.ReadLine();
 
-            planetCoordinates.Split(' ');
-            Planet planet = new Planet(planetCoordinates[0], planetCoordinates[1]);
+            var planetCoordinates= tmpPlanetCoordinates.Split(' ');
+            Planet planet = new Planet(Convert.ToInt32(planetCoordinates[0]),Convert.ToInt32(planetCoordinates[1]));
 
             Console.WriteLine("Enter the 1.Rover position with space (ex: 1 2 N)");
 
