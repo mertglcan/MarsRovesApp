@@ -1,6 +1,6 @@
 .Net 5 Console Application
 
-Used Factory Pattern,reflection,open-closed principle(can be add new rover commands without change anycode),global error handling
+Used Factory Pattern, reflection, open-closed principle(can be add new rover commands without change anycode), global error handling
 
 Expected Output
 ------------------
